@@ -1,6 +1,9 @@
 :root {
   --bg-dark: #111;
   --text-color: #f3f3f3;
+  --border-color: #9b9b9b;
+  --accent-color: #2ae22a;
+  --border-radius: 8px;
 }
 
 * {
@@ -14,4 +17,34 @@ body {
   font-family: 'Inter', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-color);
+  padding: 1rem;
+}
+
+/* .hidden {
+  display: none !important;
+} */
+
+.todo-heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.app-container {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+}
+
+/* Error State */
+.error-wrapper {
+  width: fit-content;
+}
+
+.error-msg {
+  color: rgb(230, 58, 58);
 }
