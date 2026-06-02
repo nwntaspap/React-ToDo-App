@@ -1,16 +1,62 @@
-# React + Vite
+# React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, minimal todo app built with React and Vite — my first React project.
 
-Currently, two official plugins are available:
+![React Todo App](./src/assets/todo-img.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 **Live demo:** [nwntaspap.github.io/React-ToDo-App](https://nwntaspap.github.io/React-ToDo-App/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Add and delete todos
+- Mark todos as complete
+- Filter by All / Active / Completed
+- Item counter that updates as you work
+- Empty state when the list is clear
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- [React](https://react.dev/) — UI and state
+- [Vite](https://vitejs.dev/) — build tool and dev server
+- CSS custom properties — theming and dark palette
+- [DM Sans + DM Mono](https://fonts.google.com/) — typography
+
+## Getting started
+
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Project structure
+
+```
+src/
+├── App.jsx          # Root component — state and filter logic
+├── TodoForm.jsx     # Controlled input with validation
+├── ToDoList.jsx     # Renders the list of items
+├── ToDoItem.jsx     # Single todo row with checkbox and delete
+├── index.css        # All styles
+└── main.jsx         # Entry point
+```
+
+## What I learned
+
+This was my first React project. Building it helped me understand:
+
+- Component composition and how to split UI into small pieces
+- Lifting state up and passing props down
+- Controlled inputs and form handling
+- Filtering and deriving data from state instead of storing it separately
+
+---
+
+Made with React, Vite, lots of curiosity and 💚 by [nwntaspap](https://github.com/nwntaspap)
