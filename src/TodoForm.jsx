@@ -23,34 +23,34 @@ function ToDoForm({ onAddTodo }) {
   };
 
   return (
-    <div className="form-wrapper">
-      <form className="todo-form" onSubmit={handleSubmit}>
-        <div className="input-group">
-          <label htmlFor="todo-text" className="todo-label">
-            Add Something
-          </label>
-          <input
-            type="text"
-            value={input}
-            onChange={handleInput}
-            id="todo-text"
-            className="todo-input"
-            placeholder="Add a thing to do"
-          />
-        </div>
-
-        {/* Error message - only shown when there's an error */}
-        {error && (
-          <div className="error-wrapper">
-            <span className="error-msg">{error}</span>{' '}
+    <>
+      <div className="form-wrapper">
+        <form className="todo-form" onSubmit={handleSubmit}>
+          <div className="input-group">
+            <label htmlFor="todo-text" className="todo-label">
+              Add Something
+            </label>
+            <input
+              type="text"
+              value={input}
+              onChange={handleInput}
+              id="todo-text"
+              className="todo-input"
+              placeholder="Add a thing to do"
+            />
           </div>
-        )}
+          <button type="submit" className="submit-btn">
+            Add ToDo
+          </button>
+        </form>
+      </div>
 
-        <button type="submit" className="submit-btn">
-          Add ToDo
-        </button>
-      </form>
-    </div>
+      {error && (
+        <div className="error-wrapper">
+          <span className="error-msg">{error}</span>
+        </div>
+      )}
+    </>
   );
 }
 
