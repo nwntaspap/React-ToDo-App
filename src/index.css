@@ -23,6 +23,9 @@ body {
 /* .hidden {
   display: none !important;
 } */
+.active {
+  background-color: #2ae22a;
+}
 
 .todo-heading {
   text-align: center;
